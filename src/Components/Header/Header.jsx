@@ -6,6 +6,11 @@ import SearchIcon from "@material-ui/icons/Search";
 
 import useStyles from "./styles.js";
 
+<style>
+  @import
+  url('https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap');
+</style>;
+
 const Header = ({ setCrd }) => {
   const classes = useStyles();
 
@@ -21,8 +26,12 @@ const Header = ({ setCrd }) => {
   return (
     <AppBar position="static">
       <Toolbar className={classes.toolbar}>
-        <Typography variant="h5" className={classes.title}>
-          Travel Advisor
+        <Typography
+          variant="h5"
+          className={classes.title}
+          style={{ fontfamily: "Jost" }}
+        >
+          Travel Buddy
         </Typography>
         <Box style={{ display: "flex" }}>
           <Typography variant="h6" className={classes.title}>

@@ -39,7 +39,7 @@ const List = ({
   return (
     <div className={classes.container}>
       <Typography variant="h5">
-        Resturaunts,Hotels and Attractions Near you
+        Resturaunts, Hotels and Attractions Near you!
       </Typography>
       {loading ? (
         <div className={classes.loading}>
@@ -52,7 +52,7 @@ const List = ({
             <Select value={type} onChange={(e) => setType(e.target.value)}>
               <MenuItem value="restaurants">Restaurants</MenuItem>
               <MenuItem value="hotels">Hotels</MenuItem>
-              <MenuItem value="attractions">attractions</MenuItem>
+              <MenuItem value="attractions">Attractions</MenuItem>
             </Select>
           </FormControl>
 
